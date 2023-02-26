@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-color: rgb(218, 234, 236);
+    
+}
+h1{
+    display: block;
+    max-width: fit-content;   
+    margin-left: auto;
+    margin-right: auto;
+}
+.content{
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+
+}
+
+.question{
+    display: block;
+}
+.actuar{
+    display: block;
+    margin-top: 30px;
+}
+
+
+

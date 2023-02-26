@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Adivinando tu animal interior</h1>
+    <div class="content">
+        <form action="">
+            <label class = "question" >¿El animal es un vertebrado o invertebrado?</label>
+            <input type="radio" name="clase" value="vertebrado" id="vertebrado">
+            <label for="">Vertebrado</label>
+            <input type="radio" name="clase" value="invertebrado" id="invertebrado">
+            <label for="">Invertebrado</label>
+
+            
+            <!-- Vertebrados -->
+            <div id = "vertebrados" hidden>
+                <label class="question">El animal es...</label>
+            <input type="radio" name="subclase" value="mamifero">
+            <label for="">Mamífero</label>
+            <input type="radio" name="subclase" value="ave">
+            <label for="">Ave</label>
+            <input type="radio" name="subclase" value="pez">
+            <label for="">Pez</label>
+            <input type="radio" name="subclase" value="reptil">
+            <label for="">Reptil</label>
+            
+
+
+            </div>
+            <!--Invertebrados-->
+
+            <div id="invertebrados" hidden>
+                <label for="" class="question">El animal es...</label>
+                <input type="radio" name="subclase" value="artropodo">
+                <label for="">Artrópodo</label>
+                <input type="radio" name="subclase" value="cnidarios">
+                <label for="">Cnidarios</label>
+
+            </div>
+
+
+            <div id="questions" hidden>
+                <label for="" class="question">Principalmente se desplaza mediante...</label>
+                <input type="radio" name="desplazar" value="terrestre">
+                <label for="">Tierra</label>
+                <input type="radio" name="desplazar" value="acuatico">
+                <label for="">Agua</label>
+                <input type="radio" name="desplazar" value="aereo">
+                <label for="">Aire</label>
+
+                <label class="question">Se caracteriza por su dieta...</label>
+                <input type="radio" name="dieta" value="carnivoro">
+                <label for="">Carnívoro</label>
+                <input type="radio" name="dieta" value="herbivoro">
+                <label for="">Herbívoro</label>
+                <input type="radio" name="dieta" value="omnivoro">
+                <label for="">Omnívoro</label>
+
+                <label for="" class="question">Su forma de nacer es...</label>
+                <input type="radio" name="nacer" value="viviparo">
+                <label for="">Vivíparo</label>
+                <input type="radio" name="nacer" value="oviparo">
+                <label for="">Ovíparo</label>
+
+                <label for="" class="question">Sus extremidades superiores son...</label>
+                <input type="radio" name="extremidadesS" value="pata">
+                <label for="">Pata</label>
+                <input type="radio" name="extremidadesS" value="aleta">
+                <label for="">Aleta</label>
+                <input type="radio" name="extremidadesS" value="ala">
+                <label for="">Ala</label>
+                <input type="radio" name="extremidadesS" value="tentaculos">
+                <label for="">Tentáculos</label>
+
+                <label for=""class="question">Sus extremidades inferiores son...</label>
+                <input type="radio" name="extremidadesI" value="pata">
+                <label for="">Pata</label>
+                <input type="radio" name="extremidadesI" value="aleta">
+                <label for="">Aleta</label>
+                <input type="radio" name="extremidadesI" value="ala">
+                <label for="">Ala</label>
+                <input type="radio" name="extremidadesI" value="tentaculos">
+                <label for="">Tentáculos</label>
+
+                <label for="" class="question">Usualmente la cantidad de extremidades de este animal es de...</label>
+                <input type="radio" name="total" value="4">
+                <label for="">4</label>
+                <input type="radio" name="total" value="6">
+                <label for="">6</label>
+                <input type="radio" name="total" value="8">
+                <label for="">8</label>
+                <input type="radio" name="total" value="more">
+                <label for="">10+</label>
+
+
+                <label for="" class="question">Es de tipo de sangre...</label>
+                <input type="radio" name="sangre" value="caliente">
+                <label for="">Caliente</label>
+                <input type="radio" name="sangre" value="fria">
+                <label for="">Fría</label>
+
+                <label for="" class="question">¿Usualmente puedes ver a este animal como mascota?</label>
+                <input type="radio" name="domestico" value="si" >
+                <label for="">Si</label>
+                <input type="radio" name="domestico" value="no">
+                <label for="">No</label>
+
+                <label  class="question" for="">Usualmente es animal se encuentra en lugar / bioma...</label>
+                <input type="radio" name="bioma" value="polar">
+                <label for="">Polar</label>
+                <input type="radio" name="bioma" value="tundra">
+                <label for="">Tundra</label>
+                <input type="radio" name="bioma" value="pradera">
+                <label for="">Pradera</label>
+                <input type="radio" name="bioma" value="tropical">
+                <label for="">Tropical</label>
+                <input type="radio" name="bioma" value="matorral">
+                <label for="">Matorral</label>
+                <input type="radio" name="bioma" value="bosque">
+                <label for="">Bosque</label>
+                <input type="radio" name="bioma" value="sabana">
+                <label for="">Sabana</label>
+                <input type="radio" name="bioma" value="prados">
+                <label for="">Prados</label>
+                <input type="radio" name="bioma" value="selva">
+                <label for="">Selva</label>
+                <input type="radio" name="bioma" value="estepa">
+                <label for="">Estépa</label>
+                <input type="radio" name="bioma" value="ciudad">
+                <label for="">Ciudad</label>
+                <input type="radio" name="bioma" value="calido">
+                <label for="">Cálido</label>
+
+
+
+
+
+
+            </div>
+
+
+
+
+            
+
+           <button class="actuar" id="actuar">Adivinar</button>
+        </form>
+
+        <script src="code.js"></script>
+    </div>
+</body>
+</html>
